@@ -1,5 +1,6 @@
-<% layout('layouts/boilerplate')%>
-    <h1>All Campgrounds</h1>
+<% layout('layouts/boilerplateIndex')%>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <h1 class="mb-4">All Campgrounds</h1>
     <% for(let campground of campgrounds) { %>
         <div class="card mb-3">
             <div class="row">
@@ -26,4 +27,5 @@
                 </div>
             </div>
         </div>
+        <script src="/public/javascripts/index.js"></script>
         <% } %>
