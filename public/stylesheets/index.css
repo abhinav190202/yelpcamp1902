@@ -17,8 +17,28 @@ img {
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   .carousel-content {
-    display: none;
+    position: absolute;
+    bottom: 60%;
+    left: 19.5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+}
+@media (max-width: 576px) {
+  .carousel-content {
+    position: absolute;
+    bottom: 60%;
+    left: 19%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+}
+@media (max-width: 576px) {
+  .size {
+    height: 500px;
   }
 }
