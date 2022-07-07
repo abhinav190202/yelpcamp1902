@@ -7,16 +7,17 @@ img {
   height: 200px;
 }
 .size {
-  height: 620px;
+  height: 770px;
 }
 .carousel-content {
   position: absolute;
   bottom: 60%;
-  left: 35%;
+  left: 36%;
   z-index: 20;
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
+
 @media (max-width: 750px) {
   .carousel-content {
     left: 19.5%;
