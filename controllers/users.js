@@ -35,8 +35,10 @@ module.exports.login = (req,res)=>{ //passport.authenticate() automatically call
 };
 
 module.exports.logout = (req,res)=>{
-    req.logout(function(err) {
-        if (err) { return next(err); }
+    req.logout(err=>{
+        if (err){ 
+            return next(err); 
+        }
         req.flash('success','Goodbye!');
         res.redirect('/campgrounds');
     })
